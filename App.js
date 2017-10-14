@@ -5,12 +5,13 @@ import {
   View
 } from 'react-native';
 import Word from './src/components/Word';
+import List from './src/components/List';
 
 export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Word />
+        <List />
       </View>
     );
   }
