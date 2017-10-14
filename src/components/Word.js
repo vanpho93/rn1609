@@ -10,10 +10,11 @@ export default class Word extends Component {
         };
     }
     render() {
+        const { en, vn } = this.props;
         return (
             <View>
-                <Text style={styles.en}>Hello</Text>
-                <Text style={styles.vn}>Xin chào</Text>
+                <Text style={styles.en}>{en}</Text>
+                <Text style={styles.vn}>{vn}</Text>
                 <TextInput 
                     style={styles.input} 
                     value={this.state.username}
@@ -40,7 +41,7 @@ const styles = StyleSheet.create({
     },
     input: {
         backgroundColor: '#E5E5E5',
-        width: 300,
+        width: 500,
         height: 40,
         paddingHorizontal: 5,
         margin: 5
